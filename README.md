@@ -5,3 +5,6 @@
 
 * [Brain even 
 game](https://asciinema.org/a/tGsRKfFGR2vHrwxFRzohgkR4S)
+
+* [Brain calc 
+game](https://asciinema.org/a/NfPLSECpBIEDu3uiF2dkfb00q)
