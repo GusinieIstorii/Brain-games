@@ -4,6 +4,10 @@ const getInputGame = () => {
 
   let correctAnswer = 'yes';
 
+  if (expression <= 1) {
+    correctAnswer = 'no';
+  }
+
   for (let i = 2; i < expression; i += 1) {
     if (expression % i === 0) {
       correctAnswer = 'no';
