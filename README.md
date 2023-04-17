@@ -11,3 +11,6 @@ game](https://asciinema.org/a/NfPLSECpBIEDu3uiF2dkfb00q)
 
 * [Brain gcd 
 game](https://asciinema.org/a/dqYUnIqcxKn0kwqdDDYRNC1Vo)
+
+* [Brain 
+progression](https://asciinema.org/a/g09BndpfHwWTA2AbZU06TUYb4)
