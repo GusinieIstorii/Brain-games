@@ -3,9 +3,7 @@ import getRandomNumber from '../getRandomNumber.js';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const getInputGame = () => {
-  const expression = getRandomNumber();
-
+const isPrime = (expression) => {
   let correctAnswer = 'yes';
 
   if (expression <= 1) {
@@ -18,6 +16,12 @@ const getInputGame = () => {
       break;
     }
   }
+  return correctAnswer;
+};
+
+const getInputGame = () => {
+  const expression = getRandomNumber();
+  const correctAnswer = isPrime(expression);
 
   return [expression, correctAnswer];
 };
