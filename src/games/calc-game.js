@@ -25,7 +25,7 @@ const getInputGame = () => {
       correctAnswer = (randomNumber1 * randomNumber2).toString();
       break;
     default:
-      correctAnswer = "Wat's going on?!";
+      correctAnswer = operator;
   }
 
   return [expression, correctAnswer];
