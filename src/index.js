@@ -4,9 +4,10 @@ const playGame = (getInputGame, rules) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  // const rules = getInputGame()[2];
   console.log(rules);
-  for (let i = 0; i < 3; i += 1) {
+
+  const totalRounds = 3;
+  for (let i = 0; i < totalRounds; i += 1) {
     const inputGame = getInputGame();
     const expression = inputGame[0];
     const correctAnswer = inputGame[1];
