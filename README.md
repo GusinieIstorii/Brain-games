@@ -3,6 +3,26 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/GusinieIstorii/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/GusinieIstorii/frontend-project-44/actions)
 
+# Hello! Welcome to the Brain Games!
+
+## **_Description:_**
+Brain games is a set of five console games built using popular mobile brain training apps. Each game asks questions that need to be answered. After three correct answers, the game is considered to be completed. Incorrect results end the game and return it again.
+
+## **_Min specs:_**
+
+> Node.js v13 and above.
+
+> Windows 10 with WSL or macOS 10.15+ or any current linux distributive.
+
+## **_Installing instructions:_**
+
+1. Clone this repository to your machine using 'git clone <ssh/url>'
+1. Open a 'frontend-project-44' directory 
+1. Enter 'make install' and 'npm link' in your console
+1. Congratulations! Installation is completed.
+
+## **_List of games:_**
+
 * [Brain even 
 game](https://asciinema.org/a/tGsRKfFGR2vHrwxFRzohgkR4S)
 
