@@ -1,9 +1,10 @@
 import playGame from '../index.js';
+import getRandomNumber from '../getRandomNumber.js';
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const getInputGame = () => {
-  const expression = Math.round(Math.random() * 100);
+  const expression = getRandomNumber();
   let correctAnswer;
   if (expression % 2 === 0) {
     correctAnswer = 'yes';

@@ -1,10 +1,11 @@
 import playGame from '../index.js';
+import getRandomNumber from '../getRandomNumber.js';
 
 const rules = 'What number is missing in the progression?';
 
 const getInputGame = () => {
-  const startNumber = Math.round(Math.random() * 100);
-  const step = Math.round(Math.random() * 10);
+  const startNumber = getRandomNumber();
+  const step = getRandomNumber(10);
 
   const array = [];
 
@@ -12,7 +13,7 @@ const getInputGame = () => {
     array[i] = startNumber + step * i;
   }
 
-  const randomHide = Math.floor(Math.random() * 10);
+  const randomHide = getRandomNumber(10);
   const correctAnswer = array[randomHide].toString();
   array[randomHide] = '..';
   const expression = array.join(' ');

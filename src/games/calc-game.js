@@ -1,13 +1,15 @@
 import playGame from '../index.js';
+import getRandomNumber from '../getRandomNumber.js';
 
 const rules = 'What is the result of the expression?';
 
 const getInputGame = () => {
-  const randomNumber1 = Math.round(Math.random() * 100);
-  const randomNumber2 = Math.round(Math.random() * 100);
+  const randomNumber1 = getRandomNumber();
+  const randomNumber2 = getRandomNumber();
 
   const operators = ['+', '-', '*'];
-  const random = Math.floor(Math.random() * operators.length);
+  // const random = Math.floor(Math.random() * operators.length);
+  const random = getRandomNumber(operators.length);
   const operator = operators[random];
 
   const expression = `${randomNumber1} ${operator} ${randomNumber2}`;

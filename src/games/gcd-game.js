@@ -1,10 +1,11 @@
 import playGame from '../index.js';
+import getRandomNumber from '../getRandomNumber.js';
 
 const rules = 'Find the greatest common divisor of given numbers.';
 
 const getInputGame = () => {
-  const randomNumber1 = Math.round(Math.random() * 100);
-  const randomNumber2 = Math.round(Math.random() * 100);
+  const randomNumber1 = getRandomNumber();
+  const randomNumber2 = getRandomNumber();
 
   const expression = `${randomNumber1} ${randomNumber2}`;
   let correctAnswer;
