@@ -1,3 +1,5 @@
+import playGame from '../index.js';
+
 const getInputGame = () => {
   const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const expression = Math.round(Math.random() * 100);
@@ -18,4 +20,6 @@ const getInputGame = () => {
   return [expression, correctAnswer, rules];
 };
 
-export default getInputGame;
+const playPrime = () => playGame(getInputGame);
+
+export default playPrime;

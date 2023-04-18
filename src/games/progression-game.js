@@ -1,3 +1,5 @@
+import playGame from '../index.js';
+
 const getInputGame = () => {
   const rules = 'What number is missing in the progression?';
   const startNumber = Math.round(Math.random() * 100);
@@ -17,4 +19,6 @@ const getInputGame = () => {
   return [expression, correctAnswer, rules];
 };
 
-export default getInputGame;
+const playProgression = () => playGame(getInputGame);
+
+export default playProgression;
