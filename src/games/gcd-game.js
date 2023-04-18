@@ -26,6 +26,7 @@ const getInputGame = () => {
 
   const expression = `${randomNumber1} ${randomNumber2}`;
   const correctAnswer = getCommonDivider(randomNumber1, randomNumber2).toString();
+  // почему два предпоследних коммита с этим изменением прошли удачно, а третий показал ошибку?
 
   return [expression, correctAnswer];
 };
