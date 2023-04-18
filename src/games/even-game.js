@@ -1,7 +1,8 @@
 import playGame from '../index.js';
 
+const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+
 const getInputGame = () => {
-  const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
   const expression = Math.round(Math.random() * 100);
   let correctAnswer;
   if (expression % 2 === 0) {
@@ -9,9 +10,9 @@ const getInputGame = () => {
   } else {
     correctAnswer = 'no';
   }
-  return [expression, correctAnswer, rules];
+  return [expression, correctAnswer];
 };
 
-const playEven = () => playGame(getInputGame);
+const playEven = () => playGame(getInputGame, rules);
 
 export default playEven;

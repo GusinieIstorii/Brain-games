@@ -1,7 +1,8 @@
 import playGame from '../index.js';
 
+const rules = 'What is the result of the expression?';
+
 const getInputGame = () => {
-  const rules = 'What is the result of the expression?';
   const randomNumber1 = Math.round(Math.random() * 100);
   const randomNumber2 = Math.round(Math.random() * 100);
 
@@ -26,9 +27,9 @@ const getInputGame = () => {
       correctAnswer = "Wat's going on?!";
   }
 
-  return [expression, correctAnswer, rules];
+  return [expression, correctAnswer];
 };
 
-const playCalc = () => playGame(getInputGame);
+const playCalc = () => playGame(getInputGame, rules);
 
 export default playCalc;
