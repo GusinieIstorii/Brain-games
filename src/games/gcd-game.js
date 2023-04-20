@@ -4,19 +4,6 @@ import getRandomNumber from '../getRandomNumber.js';
 const rules = 'Find the greatest common divisor of given numbers.';
 
 const getCommonDivider = (number1, number2) => {
-  // let correctAnswer;
-  // let min;
-
-  // if (number1 < number2) {
-  //   min = number1;
-  // } else {
-  //   min = number2;
-  // }
-  // for (let i = 1; i <= min; i += 1) {
-  //   if (number1 % i === 0 && number2 % i === 0) {
-  //     correctAnswer = i;
-  //   }
-  // }
   let reassignedNum1 = number1;
   let reassignedNum2 = number2;
   while (reassignedNum1 !== 0 && reassignedNum2 !== 0) {
