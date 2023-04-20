@@ -8,9 +8,6 @@ const playGame = (getInputGame, rules) => {
 
   const totalRounds = 3;
   for (let i = 0; i < totalRounds; i += 1) {
-    // const inputGame = getInputGame();
-    // const expression = inputGame[0];
-    // const correctAnswer = inputGame[1];
     const [expression, correctAnswer] = getInputGame();
     console.log(`Question: ${expression}`);
     const userAnswer = readlineSync.question('Your answer: ');
