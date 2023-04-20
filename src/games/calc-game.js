@@ -26,7 +26,7 @@ const getInputGame = () => {
   const randomNumber2 = getRandomNumber();
 
   const operators = ['+', '-', '*'];
-  const random = Math.floor(Math.random() * operators.length);
+  const random = getRandomNumber(operators.length - 1);
   const operator = operators[random];
 
   const expression = `${randomNumber1} ${operator} ${randomNumber2}`;
