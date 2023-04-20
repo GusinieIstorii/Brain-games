@@ -4,24 +4,27 @@ import getRandomNumber from '../getRandomNumber.js';
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (expression) => {
-  let correctAnswer = 'yes';
-
   if (expression <= 1) {
-    correctAnswer = 'no';
+    return false;
   }
 
   for (let i = 2; i < expression; i += 1) {
     if (expression % i === 0) {
-      correctAnswer = 'no';
-      break;
+      return false;
     }
   }
-  return correctAnswer;
+  return true;
 };
 
 const getInputGame = () => {
   const expression = getRandomNumber();
-  const correctAnswer = isPrime(expression);
+
+  let correctAnswer;
+  if (isPrime(expression)) {
+    correctAnswer = 'yes';
+  } else {
+    correctAnswer = 'no';
+  }
 
   return [expression, correctAnswer];
 };
