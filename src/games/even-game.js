@@ -3,11 +3,16 @@ import getRandomNumber from '../getRandomNumber.js';
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const isEven = (expression) => (expression % 2 === 0 ? 'yes' : 'no');
+const isEven = (expression) => (expression % 2 === 0);
 
 const getInputGame = () => {
   const expression = getRandomNumber();
-  const correctAnswer = isEven(expression);
+  let correctAnswer;
+  if (isEven(expression)) {
+    correctAnswer = 'yes';
+  } else {
+    correctAnswer = 'no';
+  }
   return [expression, correctAnswer];
 };
 
